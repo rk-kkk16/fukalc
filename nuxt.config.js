@@ -51,11 +51,12 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    publicPath: '/fukalc/',
+    publicPath: '/',
     extend (config, ctx) {
     }
   },
   router: {
     base: '/fukalc/'
-  }
+  },
+  buildDir: './fukalc/'
 }

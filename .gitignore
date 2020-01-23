@@ -70,6 +70,7 @@ typings/
 
 # Nuxt generate
 fukalc
+dist
 
 # vuepress build output
 .vuepress/dist
