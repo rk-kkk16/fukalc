@@ -29,7 +29,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-      '~/plugins/calc'
+      '~/plugins/calc',
+      '~/plugins/vee-validate'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -53,7 +54,10 @@ export default {
     */
     publicPath: '/static/',
     extend (config, ctx) {
-    }
+    },
+    transpile: [
+      'vee-validate/dist/rules'
+    ],
   },
   router: {
     base: '/fukalc/'
