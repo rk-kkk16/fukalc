@@ -58,5 +58,5 @@ export default {
   router: {
     base: '/'
   },
-  buildDir: './doc/'
+  buildDir: './docs/'
 }

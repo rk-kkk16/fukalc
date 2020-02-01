@@ -11,9 +11,9 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_workbox_564f1aa1 from 'nuxt_plugin_workbox_564f1aa1' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_nuxticons_948a4cba from 'nuxt_plugin_nuxticons_948a4cba' // Source: ./nuxt-icons.js (mode: 'all')
-import nuxt_plugin_buefy_b3397bd4 from 'nuxt_plugin_buefy_b3397bd4' // Source: ./buefy.js (mode: 'all')
+import nuxt_plugin_workbox_20a359c4 from 'nuxt_plugin_workbox_20a359c4' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_nuxticons_10cbb8c0 from 'nuxt_plugin_nuxticons_10cbb8c0' // Source: ./nuxt-icons.js (mode: 'all')
+import nuxt_plugin_buefy_15f2edf9 from 'nuxt_plugin_buefy_15f2edf9' // Source: ./buefy.js (mode: 'all')
 import nuxt_plugin_calc_6a7eeacb from 'nuxt_plugin_calc_6a7eeacb' // Source: ../plugins/calc (mode: 'all')
 
 // Component: <ClientOnly>
@@ -148,16 +148,16 @@ async function createApp (ssrContext) {
 
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_workbox_564f1aa1 === 'function') {
-    await nuxt_plugin_workbox_564f1aa1(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_20a359c4 === 'function') {
+    await nuxt_plugin_workbox_20a359c4(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_nuxticons_948a4cba === 'function') {
-    await nuxt_plugin_nuxticons_948a4cba(app.context, inject)
+  if (typeof nuxt_plugin_nuxticons_10cbb8c0 === 'function') {
+    await nuxt_plugin_nuxticons_10cbb8c0(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_buefy_b3397bd4 === 'function') {
-    await nuxt_plugin_buefy_b3397bd4(app.context, inject)
+  if (typeof nuxt_plugin_buefy_15f2edf9 === 'function') {
+    await nuxt_plugin_buefy_15f2edf9(app.context, inject)
   }
 
   if (typeof nuxt_plugin_calc_6a7eeacb === 'function') {
