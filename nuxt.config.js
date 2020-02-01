@@ -56,7 +56,9 @@ export default {
     }
   },
   router: {
-    base: '/'
+    base: '/fukalc/'
   },
-  buildDir: './docs/'
+  generate: {
+    dir: "docs"
+  }
 }
