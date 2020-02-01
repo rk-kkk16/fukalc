@@ -1,7 +1,10 @@
 <template>
 <section id="formview">
+<h2>パラメータ入力</h2>
+
 <ValidationObserver ref="observer" v-slot="{ passes }">
-  <h2>パラメータ入力</h2>
+<div class="columns">
+  <div class="column is-half">
   <ValidationProvider rules="required|numeric|between:1,999" name="身長" v-slot="{ errors }">
   <b-field label="身長(cm)"
     :type="{'is-danger':errors[0]}"
@@ -10,7 +13,9 @@
     <b-input type="number" v-model="tallofme"></b-input>
   </b-field>
   </ValidationProvider>
+  </div>
 
+  <div class="column is-half">
   <ValidationProvider rules="required|numeric|between:1,999" name="頭頂部～目の距離" v-slot="{ errors }">
   <b-field label="頭頂部～目の距離(cm)"
     :type="{'is-danger':errors[0]}"
@@ -19,7 +24,11 @@
     <b-input type="number" v-model="betweenheadandeye"></b-input>
   </b-field>
   </ValidationProvider>
+  </div>
+</div>
 
+<div class="columns">
+  <div class="column is-half">
   <ValidationProvider rules="required|numeric|between:0,999" name="対象の高さ" v-slot="{ errors }">
   <b-field label="対象の高さ(cm)"
     :type="{'is-danger':errors[0]}"
@@ -28,7 +37,9 @@
     <b-input type="number" v-model="talloftgt"></b-input>
   </b-field>
   </ValidationProvider>
+  </div>
 
+  <div class="column is-half">
   <ValidationProvider rules="required|numeric|between:0,999" name="対象との水平距離" v-slot="{ errors }">
   <b-field label="対象との水平距離(cm)"
     :type="{'is-danger':errors[0]}"
@@ -37,6 +48,8 @@
     <b-input type="number" v-model="distance"></b-input>
   </b-field>
   </ValidationProvider>
+  </div>
+</div>
 
   <div class="buttons" style="float:right">
     <b-button type="is-primary" @click="passes(calcuration)">Calcurate!!</b-button>
