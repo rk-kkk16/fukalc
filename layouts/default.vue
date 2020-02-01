@@ -8,7 +8,7 @@
       <div class="navbar-brand">
         <a
           class="navbar-item"
-          href="/fukalc/"
+          href="/"
         >
           <img
             src="~assets/buefy.png"
